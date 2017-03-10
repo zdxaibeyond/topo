@@ -1,0 +1,319 @@
+@charset "utf-8";
+/* CSS Document */
+
+.topobody{
+	display: flex;
+    background:#282828;
+}
+span, a, i, em{
+	white-space:nowrap;
+}
+
+.topocon{
+	display: flex;
+	margin:0 auto;
+	background:#f8f8f8;
+	box-shadow:0 0 5px #191919;
+	overflow:hidden;
+	flex: 1;
+	height: 100vh;
+}
+
+.topoleft{
+	float:left;
+    background:#4baed0;
+	width:200px;
+}
+.companylogo{
+    background:#222c38;
+	height:60px;
+	line-height:60px;
+	text-align:center;
+}
+.companylogo a{
+	padding-top:20px;
+    display:inline-block;
+	height:16px;
+	width:53px;
+}
+.companylogo a img{
+    display:block;
+}
+.lefticon{
+    padding:15px 0;
+}
+.countele{
+    display:none;
+}
+.iconitems{
+	padding:15px 0 15px 15px;
+	background:#4baed0;
+	border-radius:3px;
+    height:20px;
+	color:#FFF;
+	font:12px "微软雅黑";
+	line-height:20px;
+	cursor:pointer;
+}
+.iconitems img{
+    float:left;
+	margin-right:5px;
+	display:block;
+}
+.iconitems span{
+    float:left;
+	display:block;
+	width:120px;
+	overflow:hidden;
+	word-spacing: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.toporight{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+.funcbtn{
+	background:#343f4b;
+    height:60px;
+	overflow:hidden;
+	z-index: 9;
+}
+.funcbtn ul{
+    float:left;
+	margin:8px 0 0 40px;
+	color:#a8bec9;
+	font:12px "微软雅黑";
+	_margin:8px 0 0 20px;
+	_width:620px;
+}
+.funcbtn ul li{
+    float:left;
+	padding-right:20px;
+	display:block;
+	_padding-right:10px;
+	_width:140px;
+}
+.funcbtn ul li span{
+	margin-top:2px;
+    display:block;
+	height:20px;
+	cursor:pointer;
+}
+.funcbtn ul li span i, .funcbtn ul li span img, .funcbtn ul li span em{
+    float:left;
+}
+.funcbtn ul li span i{
+	margin:2px 0 0 10px;
+	background:none;
+    display:block;
+	height:13px;
+	width:13px;
+}
+.funcbtn ul li span.focus i, .funcbtn ul li span:hover i{
+    background:url(../images/select-line.gif) no-repeat;
+}
+.funcbtn ul li span img{
+    margin:6px 5px 0 0;
+}
+.funcbtn .morebtn{
+    float:right;
+	margin:20px 20px 0 0;
+	height:17px;
+	_margin:20px 10px 0 0;
+}
+.funcbtn .morebtn a{
+	float:left;
+	margin-right:20px;
+	display:block;
+	height:17px;
+    color:#a8bec9;
+	font:14px "微软雅黑";
+	line-height:17px;
+	_margin-right:10px;
+}
+.funcbtn .morebtn a img{
+    float:left;
+	margin-right:5px;
+	display:block;
+}
+.funcbtn .morebtn a font{
+    float:left;
+}
+.topocontent{
+	border: 1px solid #ccc;
+}
+.topocontent, .topoview{
+	position:relative;
+    height:600px;
+	width:1200px;
+	overflow:hidden;
+}
+.elebox{
+	padding:10px;
+    position:absolute;
+	left:0;
+	top:0;
+	background:#f1f1f1;
+	border:1px solid #a8bec9;
+	border-radius:3px;
+	height:42px;
+	text-align:center;
+	cursor:move;
+	overflow:hidden;
+}
+.elebox span{
+	margin-top:5px;
+    display:block;
+	color:#4baed0;
+	font:12px "宋体";
+}
+
+.dragPoint{
+	cursor:pointer;
+	width: 60px;
+	word-spacing: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.dragPoint1{
+	cursor:pointer;
+	width: 60px;
+	word-spacing: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.labelstyle{
+	padding:5px;
+    background:#f1f1f1;
+	border:1px solid #a8bec9;
+	border-radius:3px;
+	color:#4baed0;
+	font:12px "宋体";
+	cursor:pointer;
+}
+
+svg._jsPlumb_connector{
+    cursor:pointer;
+}
+
+
+.rightkeypop{
+	padding:0 10px;
+	position:absolute;
+    background:#f8f5f4;
+	border:1px solid #cbc9c9;
+	border-radius:3px;
+	box-shadow:0 0 3px #9e9d9d;
+	display:none;
+	width:100px;
+	color:#7c7c7c;
+	font:14px "微软雅黑";
+	line-height:32px;
+}
+.rightkeypop span{
+    display:block;
+	cursor:pointer;
+}
+.rightkeypop span.delele{
+    border-bottom:1px dotted #cbc9c9;
+}
+.rightkeypop span.relevanceto{
+    background:url(../images/secondpopmark.gif) no-repeat right;
+}
+.relevancebox{
+    position:relative;
+}
+.rightkeypop .relation_wrap{
+    position:absolute;
+	left:100px;
+	top:0;
+	background:#f8f5f4;
+	border:1px solid #cbc9c9;
+	box-shadow:0 0 3px #9e9d9d;
+	display:none;
+}
+.rightkeypop .relation_wrap a{
+	padding:0 10px;
+	border-bottom:1px dotted #cbc9c9;
+	display:block;
+    color:#7c7c7c;
+	font:12px "宋体";
+	line-height:32px;
+	width: 50px;
+	text-align: center;
+}
+.relation_wrap a:hover{
+	background-color: #ccc;
+}
+.dragHover{
+	border:1px solid orange;
+}
+
+.topoview{
+    margin:0 auto;
+    background:#f8f8f8;
+}
+
+.cursor_default, .topoview svg._jsPlumb_connector{
+    cursor:default;
+}
+.loading_pop{
+    display:none;
+}
+.cloud-hosting{
+	display: block;
+	width: 300px;
+    padding: 30px 20px;
+}
+.cloud-hosting label{
+	display: inline-block;
+	width: 100px;
+	height: 20px;
+	margin: 5px 0;
+}
+.cloud-hosting input{
+	display: inline-block;
+	width: 198px;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin: 5px 0;
+}
+.cloud-hosting textarea{
+	display: inline-block;
+	width: 100%;
+	height: 100px;
+	border: 1px solid #ccc;
+	margin-top: 10px;
+}
+.topo-btn{
+	font-size: 18px;
+	padding: 5px 10px;
+	margin-left: 40%;
+	margin-top: 20px;
+	cursor: pointer;
+}
+.num{
+	display: none
+}
+.switch-menu{
+	display: none;
+	position: fixed;
+	width: auto;
+	background-color: #343f4b;
+	color: #ccc;
+}
+.switch-menu li{
+	cursor: pointer;
+	margin: 5px 10px;
+}
+.switch-menu li:hover{
+	background-color: #222c38;
+}
+.lefticon h3{
+	color: #f0f0f0;
+	text-align: center;
+	cursor: pointer;
+}
