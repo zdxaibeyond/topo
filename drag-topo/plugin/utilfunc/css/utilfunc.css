@@ -1,0 +1,159 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*iframe弹出iframe_wrap*/
+/*$.iframePop('http://www.baidu.com', 400, 600);*/
+.iframe_wrap{
+	padding:20px;
+	position:relative;
+    
+}
+.iframe_wrap .iframe_wrap_con{
+	padding:5px;
+    background:url(../images/opacity-bg.png) repeat;
+}
+.iframe_wrap .iframe_wrap_close{
+    position:absolute;
+	right:0;
+	top:0;
+	background:url(../images/fancybox_sprite.png) no-repeat;
+	height:35px;
+	width:40px;
+}
+
+
+/*popup_tips_div弹出提示框*/
+.popup_tips_div{
+    background:url(../images/opacity-bg.png) repeat;
+	white-space:nowrap;
+}
+
+
+/*确认弹出框*/
+.confirmpop{
+    background:#FFF;
+	display:none;
+	width:300px;
+}
+.confirmpop .confirm_title{
+	padding:0 10px;
+    background:url(../images/header_bg.jpg) repeat-x top;
+	height:40px;
+	
+}
+.confirmpop .confirm_title h3{
+    float:left;
+	color:#868686;
+	font:16px "微软雅黑";
+	line-height:40px;
+}
+.confirmpop .confirm_title a{
+    float:right;
+	color:#868686;
+	font:28px "微软雅黑";
+	line-height:35px;
+	cursor:pointer;
+}
+.confirmpop .confirm_con{
+	padding:40px 40px;
+	background:#eeeeee;
+    color:#595959;
+	font:14px "宋体";
+}
+.confirmpop .confirm_con p{
+	margin-bottom:25px;
+    text-align:center;
+}
+.confirmpop .confirm_con .confirmbtn_Wrap{
+    text-align:center;
+}
+.confirmpop .confirm_con .confirmbtn_Wrap a{
+	margin:0 10px;
+	padding:0 20px;
+	background:url(../images/body_bg.jpg) repeat-x top;
+	height:32px;
+    display:inline-block;
+	color:#7a7a7a;
+	font:14px "微软雅黑";
+	line-height:32px;
+	cursor:pointer;
+}
+
+
+/*input_wrap必要的class    textarea_wrap必要的class*/
+.input_wrap, .textarea_wrap{
+	position:relative;
+	background:#FFF;
+	border:1px solid #999;
+	overflow:hidden;
+}
+.input_wrap input, .input_wrap span, .textarea_wrap textarea, .textarea_wrap span{
+	padding:0 5px;
+	position:absolute;
+	left:0;	
+	top:0;
+	background:none;
+	border:none;
+	color:#686767;
+	font:12px "宋体";
+}
+.input_wrap input, .textarea_wrap textarea{
+	z-index:1;
+}
+.input_wrap span, .textarea_wrap span{
+	z-index:0;
+}
+
+.textarea_wrap textarea, .textarea_wrap span{
+    padding:5px;
+}
+
+
+/*dropdown必要的class*/
+.dropdown{
+    position:relative;
+	background:#FFF;
+	border:1px solid #cccccc;
+	z-index:99;
+}
+.dropdown input{
+	margin-right:5px;
+	padding:0 15px 0 5px;
+    background:none;
+	background:url(../images/dropdownicon.png) no-repeat right;
+	border:none;
+}
+.dropdown .dropdowncon{
+	padding:5px;
+    position:absolute;
+	left:-1px;
+	background:#FFF;
+	border:1px solid #cccccc;
+	display:none;
+	color:#666;
+}
+
+
+/*tab切换*/
+/*<div id="tabtnWrap">
+<a id="tabtn0" class="focus"></a>
+<a id="tabtn1"></a>
+</div>
+<div class="tabcon" id="tabcon0"></div>
+<div class="tabcon" id="tabcon1"></div>
+<script type="text/javascript">
+$(function(){
+	$('#tabcon0').show();
+	$('#tabtnWrap').children('a').click(function(){
+		var ids = $(this).attr('id').substring(5);
+		$('#tabtnWrap').children('a').removeClass('focus');
+		$(this).addClass('focus');
+		$('div.tabcon').hide();
+		$('#tabcon' + ids).show();
+	});
+})
+</script>*/
+.tabcon{
+    display:none;
+}
